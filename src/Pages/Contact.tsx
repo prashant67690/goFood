@@ -1,4 +1,3 @@
-import React from "react";
 import "../index.css";
 import image1 from "../assets/contact-image.png";
 

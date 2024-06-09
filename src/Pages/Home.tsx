@@ -6,7 +6,7 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 const Home = () => {
-  const [notifications, setNotifications] = useState({
+  const [notifications] = useState({
     heart: 2,
     bag: 0,
   });
