@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Aperto";   
+  src:url("./fonts/ApertoBold/aperto_bold.ttf") format("truetype");
+  font-weight:bold;
+}
+
+
+.custom-width-200 {
+    width: 62rem; 
+  }
+  
+  .custom-width-300 {
+    width: 60rem; 
+  }
+
+  .custom-width-100 {
+    width: 50rem; 
+  }
+  
+  .custom-width-50 {
+    width: 80rem;
+    /* height: 2rem;  */
+    padding: 0.75rem 0.85rem;
+  }
+
+  .custom-padding {
+    padding-left: 4.2rem;
+    padding-top: 4.2rem; 
+  }
+  
+  .custom-height-300 {
+    height: 38rem; 
+  }
+  
+  .custom-width-text{
+     width:450px;  
+  }
+
+  
+  .custom-container{
+    margin: auto;
+    max-width: 1400px;  
+ }
+
+  .custom-img {
+   position: absolute;
+   top:70px;
+   left:550px;
+   right:20px;
+   z-index: 1;
+  }
+
+  .custom-img-2 {
+    position: absolute;
+    top:5px;
+    left:700px;
+    right:10px;
+    z-index: 1;
+    
+   }
+ 
+/* for the image of lemon */
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+}
+
+.rounded-image {
+  object-fit: cover; /* Cover the container */
+  object-position: left;
+  width: 200px;
+  height: 30px;
+  border-radius: 50px; /* Adjust as needed */
+}
+
+.arrow{
+  position: absolute;
+  top:270px;
+  height: 100px;
+  width: 200px;
+  left:500px;
+  z-index: 100;
+}
+
+.leaf1{
+   position: absolute;
+   top:225px;
+   left: 390px;
+   height: 10px;
+   transform: rotate(320deg); 
+}
+
+.leaf2{
+  position: absolute;
+   top:600px;
+   left: 1280px;
+   height: 10px;
+   transform: rotate(20deg);
+}
+
+.leaf3{
+  position: absolute;
+  top:625px;
+  left: 1260px;
+  height: 10px;
+   transform: rotate(58deg);
+}
