@@ -10,7 +10,7 @@ const categories = [
 ];
 
 const CategorySection = () => {
-  const [currItem, setCurrItem] = useState("");
+  const [currItem, setCurrItem] = useState("Meat and Seafood");
 
   const itemHandler = (e: any) => {
     setCurrItem(e.target.value);

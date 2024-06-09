@@ -1,10 +1,14 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-const ProductList = ({ category }) => {
-  const [food, setFood] = useState([]);
+interface ProductListProps {
+  category: string;
+}
+
+const ProductList: React.FC<ProductListProps> = ({ category }) => {
+  const [food, setFood] = useState<any>([]);
 
   const fxn = async (category: string) => {
     if (category == "Bakery") {
@@ -46,7 +50,7 @@ const ProductList = ({ category }) => {
   return (
     <section className="p-8 bg-white custom-container">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-        {food.map((product, index) => (
+        {food.map((product: any, index: number) => (
           <div
             key={index}
             className="flex items-center space-x-4 p-4 rounded-lg"
